@@ -2,80 +2,18 @@
 {% load static %}
 {% block content %}
     <div id="clickToScroll"
-         class="container-flex d-flex flex-column justify-content-center align-items-center bg-tall"
-         style="background-image: url({% static 'images/noise.svg' %}); cursor: pointer;">
-        <div class="wipe-in row justify-content-center align-items-center px-5 py-5 col-12 col-xl-10 mx-auto text-center">
+         class="container-flex d-flex flex-column justify-content-center align-items-center bg-tall">
+        <div class="row justify-content-center align-items-center px-5 py-5 col-12 col-xl-10 mx-auto text-center">
             <div class="mx-2 my-2">
-                <h1 class="display-1 fw-bolder" id="text-reveal">
+                <h1 class="display-1 fw-bolder wipe-in" id="text-reveal">
                 </h1>
                 <div class="anchor-point"></div>
-                <div class="mt-5">
-                    <i class="fa-solid fa-angle-down fa-2xl"></i>
-                </div>
+                <div class="fade-container lead" id="desctext1">A Software engineer passionate about AI, Web, Operating systems and any interesting project</div>
+                <div class="fade-container" id="buttons"><button class="button">About Me</button><button class="button">Resume</button><button class="button">My Code</button></div>
             </div>
         </div>
     </div>
-    <div class="row text-center d-flex align-items-stretch screen-box" style="">
-            <!-- Technical Excellence -->
-            <div class="col-md-6 d-flex">
-                <div class="card text-dark bg-theme01 mb-4 flex-fill">
-                    <div class="card-body">
-                        <i class="fas fa-cogs fa-2x mb-3"></i>
-                        <h5 class="card-title">Technical Excellence</h5>
-                        <p class="card-text">
-                            We strive for the highest standards in our projects, always looking for ways to improve and
-                            innovate.
-                            Excellence is not just a goal but a habit for us.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Education and Technical Advancement -->
-            <div class="col-md-6 d-flex">
-                <div class="card text-dark bg-theme02 mb-4 flex-fill">
-                    <div class="card-body">
-                        <i class="fas fa-graduation-cap fa-2x mb-3"></i>
-                        <h5 class="card-title">Education and Technical Advancement</h5>
-                        <p class="card-text">
-                            We believe in the power of continual learning and skill enhancement. Our commitment extends
-                            to promoting
-                            educational initiatives across communities.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ethical Computing and Positive Impact -->
-            <div class="col-md-6 d-flex">
-                <div class="card text-dark bg-theme03 mb-4 flex-fill">
-                    <div class="card-body">
-                        <i class="fas fa-balance-scale fa-2x mb-3"></i>
-                        <h5 class="card-title">Ethical Computing and Positive Impact</h5>
-                        <p class="card-text">
-                            Our standards are not just technical but ethical. We hold ourselves accountable for using
-                            technology
-                            responsibly and for the benefit of society.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Diversity, Equity, and Inclusion -->
-            <div class="col-md-6 d-flex">
-                <div class="card text-dark bg-theme04 mb-4 flex-fill">
-                    <div class="card-body">
-                        <i class="fas fa-users fa-2x mb-3"></i>
-                        <h5 class="card-title">Diversity, Equity, and Inclusion</h5>
-                        <p class="card-text">
-                            Diversity is our strength. We aim to create an inclusive culture that respects and values
-                            individual
-                            differences, ensuring everyone has an equal opportunity.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     <script src="{% static 'scripts/text-reveal.js' %}"></script>
 {%  endblock %}

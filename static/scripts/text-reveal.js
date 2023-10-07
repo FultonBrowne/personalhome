@@ -4,6 +4,10 @@ let placeholder = document.getElementById("text-reveal");
 let words = ["Hey!", "I'm Fulton Browne"];
 //Initialize the index at the first element of the previously created array.
 let index = 0;
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 function type(word){
     let i = 0;
 		//Set the interval that makes the writing animation.
@@ -20,9 +24,14 @@ function type(word){
 
 }
 
-function erase(){
+async function erase(){
 	//Set the interval that makes the deleting animation.
     if((index>=words.length-1)){
+                /* document.getElementById("desctext").style.visibility = "visible" */
+                element = document.querySelector('.fade-container');
+                document.getElementById("desctext1").classList.toggle('active');
+                await sleep(1000)
+                document.getElementById("buttons").classList.toggle('active')
                 return
             }
     let deleting = setInterval(() => {
