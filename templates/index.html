@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div id="clickToScroll"
+         class="container-flex d-flex flex-column justify-content-center align-items-center bg-tall"
+         style="background-image: url({% static 'images/noise.svg' %}); cursor: pointer;">
+        <div class="wipe-in row justify-content-center align-items-center px-5 py-5 col-12 col-xl-10 mx-auto text-center">
+            <div class="mx-2 my-2">
+                <h1 class="display-1 fw-bolder" id="text-reveal">
+                </h1>
+                <div class="anchor-point"></div>
+                <div class="mt-5">
+                    <i class="fa-solid fa-angle-down fa-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'scripts/text-reveal.js' %}"></script>
+{%  endblock %}
