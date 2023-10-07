@@ -29,7 +29,6 @@
 
 body {
     min-height: 75vh;
-    background: linear-gradient(to right, var(--neon-blue), var(--aquamarine));;
 }
 
 .screen-box {
@@ -108,4 +107,16 @@ h1, h2, h3, h4, h5, h6, .nn-gradient-text, .nn-gradient-text-animate {
   cursor: pointer;
   border-radius: 10px; /* Adjust the value for button roundness */
   opacity: 0.8; /* Adjust the value for button transparency */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for transform and opacity */
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+.button-text{
+    visibility: hidden;
+}
+.button-text:hover{
+    visibility: visible;
 }

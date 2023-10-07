@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+    <style>
+    body {
+        background: linear-gradient(to right, var(--neon-blue), var(--aquamarine));;
+    }
+    </style>
     <div id="clickToScroll"
          class="container-flex d-flex flex-column justify-content-center align-items-center bg-tall">
         <div class="row justify-content-center align-items-center px-5 py-5 col-12 col-xl-10 mx-auto text-center">
@@ -8,8 +13,11 @@
                 <h1 class="display-1 fw-bolder wipe-in" id="text-reveal">
                 </h1>
                 <div class="anchor-point"></div>
-                <div class="fade-container lead" id="desctext1">A Software engineer passionate about AI, Web, Operating systems and any interesting project</div>
-                <div class="fade-container" id="buttons"><button class="button">About Me</button><button class="button">Resume</button><button class="button">My Code</button></div>
+                <div class="fade-container lead" id="desctext1">A Software engineer passionate about AI, web dev, and just about everything coding. I love exciting </div>
+                <div class="fade-container lead" id="buttons" style="margin-top: 5%">
+                    <button class="button" onclick="window.location.href='{%  url 'about' %}'">About Me</button>
+                    <button class="button" onclick="window.open('https://docs.google.com/document/d/1pb-nuJLa2Y1NP1MnoiiJazVBxVCQDqyVrxskqwUHjPY/edit?usp=sharing', '_blank')" >Resume</button>
+                    <button class="button" onclick="window.open('https://github.com/FultonBrowne', '_blank')">My Code</button></div>
             </div>
         </div>
     </div>

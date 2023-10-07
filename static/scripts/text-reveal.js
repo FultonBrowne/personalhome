@@ -1,7 +1,7 @@
 //Define the placeholder where the text will be write in thanks to his id.
 let placeholder = document.getElementById("text-reveal");
 //Stock all of the sentences pieces in an array.
-let words = ["Hey!", "I'm Fulton Browne"];
+let words = ["Hi!", "I'm Fulton Browne"];
 //Initialize the index at the first element of the previously created array.
 let index = 0;
 
@@ -30,7 +30,7 @@ async function erase(){
                 /* document.getElementById("desctext").style.visibility = "visible" */
                 element = document.querySelector('.fade-container');
                 document.getElementById("desctext1").classList.toggle('active');
-                await sleep(1000)
+                await sleep(500)
                 document.getElementById("buttons").classList.toggle('active')
                 return
             }
