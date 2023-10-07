@@ -32,6 +32,12 @@ body {
     background: linear-gradient(to right, var(--neon-blue), var(--aquamarine));;
 }
 
+.screen-box {
+    padding: 1%;
+    background-color: rgb(33,37,41);
+    height: 100vh;
+
+}
 
 .nav-pill {
     background-color: var(--neon-blue) !important;
