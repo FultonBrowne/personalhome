@@ -9,3 +9,8 @@ def index(request):
 def about(request):
     context = {'page_name': 'about'}
     return render(request, 'about.html', context)
+
+
+def contact(request):
+    context = {'page_name': 'contact'}
+    return render(request, 'contact.html', context)

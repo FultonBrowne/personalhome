@@ -1,4 +1,50 @@
 {% extends 'base.html' %}
+{% block title %}About{% endblock %}
 {% load static %}
 {% block content %}
-{%  endblock %}
+<div class="anchor-point"></div>
+<div class="col-12 col-lg-10 my-5 wipe-in" style="text-align: left;">
+    <div class="container my-5">
+        <!-- <img src="{% static 'images/memoji.png' %}" alt="My memoji" width="200"> -->
+        <div class="pb-2 mb-5">
+            <h1 class="display-4 fw-bolder"><span class="nn-gradient-text">About Me</span></h1>
+        </div>
+
+        <!-- Adding smaller headers and subpoints -->
+        A Software engineer passionate about AI, web dev, and anything that pushes computing forward.
+        I'm fascinated by any challenge involving computers and creative problem solving. Over the years
+        I've grown particular fond of work to AI, web development, and systems engineering.
+        <div class="section">
+            <p>Details about my academic qualifications and institutions attended.</p>
+
+            <h3>Experience</h3>
+            <p>Information about my work experience and any notable achievements.</p>
+        </div>
+
+        <div class="section mt-5">
+            <h2>Skills</h2>
+            <p class="lead">An overview of my technical and soft skills.</p>
+
+            <h3>Technical Skills</h3>
+            <p>List of programming languages, tools, and technologies I'm proficient in.</p>
+
+            <h3>Soft Skills</h3>
+            <p>Communication, teamwork, problem-solving, and other relevant soft skills.</p>
+        </div>
+
+        <div class="section mt-5">
+            <h2>Hobbies</h2>
+            <p class="lead">Things I enjoy doing outside of work or studies.</p>
+
+            <h3>Sports</h3>
+            <p>Information about sports I play or follow.</p>
+
+            <h3>Interests</h3>
+            <p>Other non-professional interests and activities I'm passionate about.</p>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

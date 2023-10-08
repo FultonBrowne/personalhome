@@ -20,7 +20,7 @@
 
 .nn-gradient-text {
     background: var(--bright-pink-crayola);
-    background: linear-gradient(to right, var(--bright-pink-crayola), var(--maize));
+    background: linear-gradient(to right, var(--neon-blue), var(--aquamarine));;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -34,12 +34,15 @@
     fill: #260e0e;
 }
 
-div.container{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	min-width: 100vw;
+div.container {
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    div.container {
+        margin-left: 10%;
+    }
 }
 
 div.container > h1{ /*Set the position to relative in order to place the sidebar then.*/

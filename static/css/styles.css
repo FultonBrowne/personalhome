@@ -6,6 +6,10 @@
     --neon-blue: #525dffff;
 }
 
+.home-text{
+        max-width: 50%;
+}
+
 
 .bg-theme01 {
     background: var(--bright-pink-crayola);
@@ -48,6 +52,10 @@ body {
     .nav-pill {
         border-radius: 25px;
     }
+    .home-text{
+        max-width: 100%;
+}
+
 }
 
 .sticky-nav {
@@ -119,4 +127,8 @@ h1, h2, h3, h4, h5, h6, .nn-gradient-text, .nn-gradient-text-animate {
 }
 .button-text:hover{
     visibility: visible;
+}
+
+.social-icons{
+    font-size: large;
 }
