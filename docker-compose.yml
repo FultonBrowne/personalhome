@@ -13,7 +13,7 @@ services:
       - ./html:/usr/share/nginx/html
       - ./static:/static
     depends_on:
-      - your_service
+      - personalsite
 
   personalsite:
     build:
@@ -21,7 +21,7 @@ services:
       dockerfile: Dockerfile   # Name of your Dockerfile
     container_name: personalsite
     ports:
-      - "8000:8000"
+      - "8000"
 
   certbot:
     image: certbot/certbot
@@ -32,8 +32,3 @@ services:
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
     depends_on:
       - nginx
-
-networks:
-  default:
-    external:
-      name: bridge
