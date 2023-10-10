@@ -20,9 +20,10 @@ services:
       context: ./  # Path to your service's Dockerfile and code
       dockerfile: Dockerfile   # Name of your Dockerfile
     container_name: personalsite
+    environment:
+      - DJANGO_ALLOWED_HOSTS=fulton.software,www.fulton.software
     ports:
       - "8000"
-
   certbot:
     image: certbot/certbot
     container_name: certbot
@@ -30,5 +31,6 @@ services:
       - ./certs:/etc/letsencrypt
       - ./html:/usr/share/nginx/html
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+    command: certonly --webroot --webroot-path=/var/www/html --email your-email@example.com -d fulton.software --deploy-hook "nginx -s reload"
     depends_on:
       - nginx
