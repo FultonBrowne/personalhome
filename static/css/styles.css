@@ -70,16 +70,17 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+
+
     text-align: center;
 }
 
 * {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .nn-gradient-text, .nn-gradient-text-animate {
-    font-family: monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .anchor-point {
