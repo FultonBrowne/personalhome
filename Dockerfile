@@ -4,6 +4,7 @@ FROM python:3.10
 # Set environment variables for Django
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
+ENV DEBUG False
 
 # Set the working directory in the container
 WORKDIR /app
